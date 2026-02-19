@@ -1,15 +1,12 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,42 +20,3 @@ jobs:
           path: '.'
       - id: deployment
         uses: actions/deploy-pages@v4
-```
-
-Scroll down → **Commit changes** → **Commit directly to main** → green **Commit changes**
-
----
-
-**Step 2 — Manually enable Pages first**
-
-Before running the workflow:
-
-1. Go to **Settings → Pages**
-2. Under **Source** select **GitHub Actions**
-3. Click **Save**
-4. Wait 10 seconds
-
----
-
-**Step 3 — Fix Environment Protection**
-
-1. Go to **Settings → Environments**
-2. Click **github-pages**
-3. Under **Deployment branches and tags**
-4. Change to **All branches**
-5. Click **Save protection rules**
-
----
-
-**Step 4 — Run the Workflow**
-
-1. Go to **Actions** tab
-2. Click **Deploy to GitHub Pages**
-3. Click **Run workflow** → green **Run workflow**
-4. Wait for green ✅
-
----
-
-Your live link:
-```
-https://ravipatel0507.github.io/municipal-edrms/
