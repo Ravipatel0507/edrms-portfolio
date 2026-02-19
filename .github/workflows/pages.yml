@@ -17,16 +17,16 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,17 +40,22 @@ jobs:
 
 ---
 
-**Step 5**
-Scroll down to the bottom of the page. You will see **Commit new file** section:
-- Leave the default message as is or type `Add GitHub Pages workflow`
-- Make sure **Commit directly to the main branch** is selected
-- Click the green **Commit new file** button
+**What changed and why:**
+
+| Line | Before | After | Reason |
+|---|---|---|---|
+| `environment:` block | Under `deploy:` before `runs-on` | Moved **after** `runs-on` | Wrong order caused line 39 parse error |
+| `configure-pages` | `@v5` | `@v4` | v5 is unstable, v4 is the latest stable version |
 
 ---
 
-**Step 6**
-Now go to the **Actions** tab on your repo — you will see **Deploy to GitHub Pages** appear in the left sidebar and a workflow run will start automatically.
+**After pasting:**
+1. Scroll down → **Commit changes**
+2. Click **Commit directly to main**
+3. Click green **Commit changes** button
+4. Go to **Actions** tab → click **Deploy to GitHub Pages** → click **Run workflow**
+5. Wait for green ✅
 
-Wait for the **green checkmark ✅** — your site is live at:
+Your live link will be ready at:
 ```
 https://YOUR-USERNAME.github.io/municipal-edrms/
