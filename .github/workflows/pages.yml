@@ -15,12 +15,41 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
       - id: deployment
         uses: actions/deploy-pages@v4
+```
+
+Scroll down → **Commit changes** → **Commit directly to main** → green **Commit changes**
+
+---
+
+**Step 3 — Run the Workflow**
+
+1. Go to **Actions** tab
+2. Click **Deploy to GitHub Pages**
+3. Click **Run workflow**
+4. Click green **Run workflow**
+5. Wait for green ✅
+
+---
+
+**What `enablement: true` does:**
+It tells GitHub Actions to automatically enable Pages for your repo if it isn't fully activated yet — this fixes the exact error you are seeing.
+
+---
+
+Your live link will be:
+```
+https://YOUR-USERNAME.github.io/municipal-edrms/
