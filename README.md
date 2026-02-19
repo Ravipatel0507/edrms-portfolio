@@ -2,7 +2,7 @@
 
 > An interactive, browser-based prototype of an Electronic Document & Records Management System (EDRMS) for a municipal government environment — built entirely in a single HTML file.
 
-![Dashboard Preview](screenshots/dashboard.png)
+
 
 ---
 
@@ -30,7 +30,7 @@ The fictional scenario is set in the **County of Vermilion Regional Administrati
 
 ## 🚀 Live Demo
 
-**[View Live on GitHub Pages →](https://ravipatel.github.io/municipal-edrms/)**
+**[View Live on GitHub Pages →](https://ravipatel0507.github.io/municipal-edrms/)**
 
 ---
 
