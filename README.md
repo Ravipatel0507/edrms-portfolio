@@ -30,7 +30,7 @@ The fictional scenario is set in the **County of Vermilion Regional Administrati
 
 ## 🚀 Live Demo
 
-**[View Live on GitHub Pages →](https://ravipatel0507.github.io/municipal-edrms/)**
+**[View Live on GitHub Pages →](https://github.com/Ravipatel0507/edrms-portfolio/blob/main/EDRMS_CoverVermilion.html)**
 
 ---
 
