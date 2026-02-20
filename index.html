@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Municipal EDRMS — Portfolio Project | Ravi Patel</title>
+<title>Municipal Data Management System | Ravi Patel</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -215,17 +215,17 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
       <path d="M37 42l3 3 5-6" stroke="#12191f" stroke-width="1.8" stroke-linecap="round"/>
     </svg>
   </div>
-  <div class="sp-title">Municipal EDRMS</div>
+  <div class="sp-title">Municipal Data Management</div>
   <div class="sp-sub">Electronic Document & Records Management System</div>
-  <div class="sp-desc">A fully functional portfolio project demonstrating EDRMS administration, retention scheduling, classification taxonomy, policy development, and audit trail management — built for the Records Management Technician role at County of Vermilion River.</div>
+  <div class="sp-desc">A fully functional frontend portfolio project demonstrating municipal data management, retention scheduling, classification taxonomy, policy development, and audit trail management.</div>
   <button class="sp-btn" onclick="launchApp()">Launch System →</button>
 </div>
 
 <!-- APP -->
 <div id="app">
   <div class="topbar">
-    <div class="tb-brand"><em>CVR</em> Municipal EDRMS</div>
-    <div class="tb-meta">County of Vermilion River · Corporate Services</div>
+    <div class="tb-brand"><em>MDS</em> Municipal Data Management</div>
+    <div class="tb-meta">Municipal Services · Records &amp; Data Management</div>
     <div class="tb-user">
       <span>Ravi Patel</span>
       <span class="tb-badge">Records Tech</span>
@@ -248,10 +248,10 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
     <!-- ═══════════════════════════════════════════ DASHBOARD -->
     <div class="sec on" id="sec-dashboard">
       <div class="ph">Records Management Dashboard</div>
-      <div class="ps">County of Vermilion River · Corporate Services Department · <span id="dash-date"></span></div>
+      <div class="ps">Municipal Services · Records &amp; Data Management Department · <span id="dash-date"></span></div>
 
       <div class="info-box">
-        <strong>Portfolio Demo Note:</strong> This system was built as a hands-on portfolio project to demonstrate practical EDRMS competency. All records, retention rules, and classifications below reflect real municipal records categories based on Alberta's <em>Municipal Government Act</em> and the <em>Records Management Regulation (AR 225/2001)</em>.
+        <strong>System Note:</strong> This system was built as a hands-on portfolio project to demonstrate practical EDRMS competency. All records, retention rules, and classifications below reflect real municipal records categories based on Alberta's <em>Municipal Government Act</em> and the <em>Records Management Regulation (AR 225/2001)</em>.
       </div>
 
       <div class="stats" id="dashStats"></div>
@@ -368,9 +368,9 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
           <div class="wizard-pane on" id="wp0">
             <div class="policy-section">
               <div class="pol-h">1. Scope & Purpose</div>
-              <div class="pol-clause"><div class="pol-num">1.1</div><div class="pol-text">This policy establishes the framework for managing all records created, received, or maintained by the County of Vermilion River in the course of conducting municipal business.<span class="pol-tag" style="--tag:#d4edda;color:#155724;">Active</span></div></div>
+              <div class="pol-clause"><div class="pol-num">1.1</div><div class="pol-text">This policy establishes the framework for managing all records created, received, or maintained by the Municipality in the course of conducting municipal business.<span class="pol-tag" style="--tag:#d4edda;color:#155724;">Active</span></div></div>
               <div class="pol-clause"><div class="pol-num">1.2</div><div class="pol-text">All records, regardless of format (paper, digital, audio-visual), are subject to this policy and applicable legislation including the <em>Freedom of Information and Protection of Privacy Act (FOIP)</em> and the <em>Municipal Government Act</em>.</div></div>
-              <div class="pol-clause"><div class="pol-num">1.3</div><div class="pol-text">This policy applies to all County employees, contractors, and volunteers who create or handle County records in the performance of their duties.<span class="pol-tag" style="--tag:#fff3cd;color:#856404;">Needs Review</span></div></div>
+              <div class="pol-clause"><div class="pol-num">1.3</div><div class="pol-text">This policy applies to all municipal employees, contractors, and volunteers who create or handle municipal records in the performance of their duties.<span class="pol-tag" style="--tag:#fff3cd;color:#856404;">Needs Review</span></div></div>
             </div>
             <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:8px;">
               <button class="btn btn-p" onclick="wzNext()">Next: Obligations →</button>
@@ -380,7 +380,7 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
           <div class="wizard-pane" id="wp1">
             <div class="policy-section">
               <div class="pol-h">2. Legislative Obligations</div>
-              <div class="pol-clause"><div class="pol-num">2.1</div><div class="pol-text"><strong>Access to Information Act:</strong> All records are subject to access requests. Records Technician must respond to requests within legislated timelines and apply appropriate exemptions in consultation with the Director of Corporate Services.</div></div>
+              <div class="pol-clause"><div class="pol-num">2.1</div><div class="pol-text"><strong>Access to Information Act:</strong> All records are subject to access requests. Records Technician must respond to requests within legislated timelines and apply appropriate exemptions in consultation with the Director of Data Management.</div></div>
               <div class="pol-clause"><div class="pol-num">2.2</div><div class="pol-text"><strong>Protection of Privacy Act (FOIP Part 2):</strong> Personal information collected, used, or disclosed must align with original collection purpose. Records containing personal data require additional security classification and restricted access controls.</div></div>
               <div class="pol-clause"><div class="pol-num">2.3</div><div class="pol-text"><strong>Municipal Government Act s.207:</strong> Financial records must be retained for a minimum of 7 years. Permanent retention applies to bylaws, minutes of Council, and land-related documents.</div></div>
               <div class="pol-clause"><div class="pol-num">2.4</div><div class="pol-text"><strong>Records Management Regulation (AR 225/2001):</strong> The County must maintain a retention and disposition schedule approved by the Provincial Archives of Alberta for all record series.</div></div>
@@ -447,7 +447,7 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
     <!-- ═══════════════════════════════════════════ ABOUT -->
     <div class="sec" id="sec-about">
       <div class="ph">About This Project</div>
-      <div class="ps">Portfolio project built for Records Management Technician application — County of Vermilion River</div>
+      <div class="ps">Frontend portfolio project — Built by Ravi Patel</div>
 
       <div class="info-box">
         <strong>What makes this unprecedented:</strong> This is a fully functional EDRMS built from scratch as a job application portfolio piece — demonstrating the exact competencies the role requires rather than just claiming them. No prior candidate for a records management role has submitted a working system as part of their application.
@@ -479,23 +479,24 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
           </ul>
         </div>
         <div class="about-card">
-          <h3>Technical Skills</h3>
+          <h3>Tools &amp; Technologies Used</h3>
           <ul>
-            <li>Designed from scratch — no frameworks or templates used</li>
-            <li>Full CRUD operations on a records registry</li>
-            <li>Real-time search and multi-filter across all records</li>
-            <li>Interactive classification taxonomy tree</li>
-            <li>Data export (CSV simulation) for retention schedule and audit log</li>
-            <li>Responsive design for desktop and mobile access</li>
+            <li><strong>HTML5</strong> — semantic structure and layout</li>
+            <li><strong>CSS3</strong> — custom design system, responsive grid, animations</li>
+            <li><strong>Vanilla JavaScript (ES6+)</strong> — all logic, data handling, and interactivity</li>
+            <li><strong>Google Fonts</strong> — DM Mono &amp; Playfair Display typefaces</li>
+            <li>No frameworks, no libraries, no templates — built entirely from scratch</li>
+            <li>Frontend only — all data is in-memory JavaScript (no backend or database)</li>
           </ul>
         </div>
         <div class="about-card">
-          <h3>Resume Integration</h3>
+          <h3>Project Details</h3>
           <ul>
-            <li><strong>Project Title:</strong> Municipal EDRMS — County of Vermilion River Portfolio</li>
-            <li><strong>Skills:</strong> EDRMS administration, retention scheduling, FOIP compliance, classification scheme design, policy development</li>
-            <li><strong>Outcome:</strong> Demonstrates end-to-end records management capability in a live system rather than a description</li>
-            <li><strong>Submitted with:</strong> Application for Records Management Technician — CVR</li>
+            <li><strong>Created by:</strong> Ravi Patel</li>
+            <li><strong>Type:</strong> Frontend Web Application (Single HTML File)</li>
+            <li><strong>Purpose:</strong> Portfolio project demonstrating municipal data management competency in a fully interactive live system</li>
+            <li><strong>Features:</strong> Full CRUD records registry, real-time search &amp; filters, classification tree, retention scheduler, policy builder wizard, tamper-evident audit trail, CSV export</li>
+            <li><strong>Responsive:</strong> Desktop and mobile compatible</li>
           </ul>
         </div>
       </div>
@@ -622,16 +623,16 @@ label.fl{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:upperc
 // ═══════════════════════════════════════════════════════════
 
 let records = [
-  {id:'CVR-2024-001',title:'2024 Council Meeting Minutes - January',class:'Administrative',sub:'Council Records',sec:'Public',dept:'Administration',status:'Active',created:'2024-01-15',retYears:10,desc:'Official minutes of the January 2024 regular Council meeting.',fmt:'Digital - PDF',vital:'Yes'},
-  {id:'CVR-2024-002',title:'Annual Financial Statements 2023',class:'Financial',sub:'Annual Reporting',sec:'Public',dept:'Finance',status:'Archived',created:'2024-03-01',retYears:7,desc:'Audited financial statements for fiscal year 2023.',fmt:'Digital - PDF',vital:'Yes'},
-  {id:'CVR-2024-003',title:'Employee Benefits Policy v3.2',class:'Personnel',sub:'HR Policies',sec:'Confidential',dept:'Administration',status:'Active',created:'2024-02-10',retYears:7,desc:'Updated employee benefits and compensation policy.',fmt:'Digital - Word',vital:'No'},
-  {id:'CVR-2024-004',title:'Road Maintenance Contract - Spring 2024',class:'Infrastructure',sub:'Contracts',sec:'Restricted',dept:'Infrastructure',status:'Under Review',created:'2024-04-05',retYears:7,desc:'Contract with Sunrise Road Services for spring gravel maintenance.',fmt:'Digital - PDF',vital:'No'},
-  {id:'CVR-2024-005',title:'Land Use Bylaw Amendment 2024-03',class:'Legal',sub:'Bylaws',sec:'Public',dept:'Planning & Development',status:'Active',created:'2024-05-20',retYears:0,desc:'Amendment to Land Use Bylaw regarding agricultural zoning.',fmt:'Digital - PDF',vital:'Yes'},
-  {id:'CVR-2024-006',title:'Access to Information Request - File 24-019',class:'Legal',sub:'FOIP Requests',sec:'Highly Confidential',dept:'Corporate Services',status:'Active',created:'2024-06-01',retYears:3,desc:'ATI request from media outlet re: infrastructure spending.',fmt:'Digital - Email',vital:'No'},
-  {id:'CVR-2024-007',title:'2024-2026 Capital Budget Plan',class:'Financial',sub:'Budget Planning',sec:'Confidential',dept:'Finance',status:'Under Review',created:'2024-07-15',retYears:7,desc:'Three-year capital expenditure plan for infrastructure and services.',fmt:'Digital - Excel',vital:'Yes'},
-  {id:'CVR-2024-008',title:'Subdivision Application - Block 14 Lot 22',class:'Planning',sub:'Development Applications',sec:'Public',dept:'Planning & Development',status:'Active',created:'2024-08-03',retYears:10,desc:'Residential subdivision application for 14 new lots.',fmt:'Mixed',vital:'No'},
-  {id:'CVR-2024-009',title:'Health & Safety Incident Report Q2',class:'Administrative',sub:'Safety Records',sec:'Restricted',dept:'Public Works',status:'Active',created:'2024-09-10',retYears:10,desc:'Quarterly workplace incident and near-miss summary report.',fmt:'Digital - PDF',vital:'No'},
-  {id:'CVR-2024-010',title:'Water Treatment Plant Inspection 2024',class:'Infrastructure',sub:'Inspection Reports',sec:'Restricted',dept:'Infrastructure',status:'Pending Disposition',created:'2022-11-01',retYears:5,desc:'Annual inspection of Kitscoty water treatment facility.',fmt:'Digital - PDF',vital:'No'},
+  {id:'MDS-2024-001',title:'2024 Council Meeting Minutes - January',class:'Administrative',sub:'Council Records',sec:'Public',dept:'Administration',status:'Active',created:'2024-01-15',retYears:10,desc:'Official minutes of the January 2024 regular Council meeting.',fmt:'Digital - PDF',vital:'Yes'},
+  {id:'MDS-2024-002',title:'Annual Financial Statements 2023',class:'Financial',sub:'Annual Reporting',sec:'Public',dept:'Finance',status:'Archived',created:'2024-03-01',retYears:7,desc:'Audited financial statements for fiscal year 2023.',fmt:'Digital - PDF',vital:'Yes'},
+  {id:'MDS-2024-003',title:'Employee Benefits Policy v3.2',class:'Personnel',sub:'HR Policies',sec:'Confidential',dept:'Administration',status:'Active',created:'2024-02-10',retYears:7,desc:'Updated employee benefits and compensation policy.',fmt:'Digital - Word',vital:'No'},
+  {id:'MDS-2024-004',title:'Road Maintenance Contract - Spring 2024',class:'Infrastructure',sub:'Contracts',sec:'Restricted',dept:'Infrastructure',status:'Under Review',created:'2024-04-05',retYears:7,desc:'Contract with municipal road services provider for spring maintenance.',fmt:'Digital - PDF',vital:'No'},
+  {id:'MDS-2024-005',title:'Land Use Bylaw Amendment 2024-03',class:'Legal',sub:'Bylaws',sec:'Public',dept:'Planning & Development',status:'Active',created:'2024-05-20',retYears:0,desc:'Amendment to Land Use Bylaw regarding agricultural zoning.',fmt:'Digital - PDF',vital:'Yes'},
+  {id:'MDS-2024-006',title:'Access to Information Request - File 24-019',class:'Legal',sub:'FOIP Requests',sec:'Highly Confidential',dept:'Corporate Services',status:'Active',created:'2024-06-01',retYears:3,desc:'ATI request from media outlet re: infrastructure spending.',fmt:'Digital - Email',vital:'No'},
+  {id:'MDS-2024-007',title:'2024-2026 Capital Budget Plan',class:'Financial',sub:'Budget Planning',sec:'Confidential',dept:'Finance',status:'Under Review',created:'2024-07-15',retYears:7,desc:'Three-year capital expenditure plan for infrastructure and services.',fmt:'Digital - Excel',vital:'Yes'},
+  {id:'MDS-2024-008',title:'Subdivision Application - Block 14 Lot 22',class:'Planning',sub:'Development Applications',sec:'Public',dept:'Planning & Development',status:'Active',created:'2024-08-03',retYears:10,desc:'Residential subdivision application for 14 new lots.',fmt:'Mixed',vital:'No'},
+  {id:'MDS-2024-009',title:'Health & Safety Incident Report Q2',class:'Administrative',sub:'Safety Records',sec:'Restricted',dept:'Public Works',status:'Active',created:'2024-09-10',retYears:10,desc:'Quarterly workplace incident and near-miss summary report.',fmt:'Digital - PDF',vital:'No'},
+  {id:'MDS-2024-010',title:'Water Treatment Plant Inspection 2024',class:'Infrastructure',sub:'Inspection Reports',sec:'Restricted',dept:'Infrastructure',status:'Pending Disposition',created:'2022-11-01',retYears:5,desc:'Annual inspection of municipal water treatment facility.',fmt:'Digital - PDF',vital:'No'},
 ];
 
 let retentionRules = [
@@ -646,16 +647,16 @@ let retentionRules = [
 ];
 
 let auditLog = [
-  {ts:'2024-09-15 14:32',user:'Ravi Patel',action:'CREATE',target:'CVR-2024-009',note:'Created new Health & Safety Incident Report Q2'},
-  {ts:'2024-09-10 09:15',user:'Ravi Patel',action:'CLASSIFY',target:'CVR-2024-008',note:'Reclassified from General to Planning > Development Applications'},
-  {ts:'2024-08-20 11:02',user:'System',action:'DISPOSE',target:'CVR-2022-047',note:'Auto-flagged for disposition — retention period expired'},
-  {ts:'2024-08-15 16:45',user:'Ravi Patel',action:'VIEW',target:'CVR-2024-006',note:'Accessed FOIP request file for response preparation'},
-  {ts:'2024-08-03 10:30',user:'Ravi Patel',action:'CREATE',target:'CVR-2024-008',note:'Created Subdivision Application record'},
+  {ts:'2024-09-15 14:32',user:'Ravi Patel',action:'CREATE',target:'MDS-2024-009',note:'Created new Health & Safety Incident Report Q2'},
+  {ts:'2024-09-10 09:15',user:'Ravi Patel',action:'CLASSIFY',target:'MDS-2024-008',note:'Reclassified from General to Planning > Development Applications'},
+  {ts:'2024-08-20 11:02',user:'System',action:'DISPOSE',target:'MDS-2022-047',note:'Auto-flagged for disposition — retention period expired'},
+  {ts:'2024-08-15 16:45',user:'Ravi Patel',action:'VIEW',target:'MDS-2024-006',note:'Accessed FOIP request file for response preparation'},
+  {ts:'2024-08-03 10:30',user:'Ravi Patel',action:'CREATE',target:'MDS-2024-008',note:'Created Subdivision Application record'},
   {ts:'2024-07-22 13:10',user:'Director Corporate Services',action:'EDIT',target:'RR-006',note:'Updated Personnel Files retention from 6 to 7 years per legal review'},
-  {ts:'2024-07-15 09:00',user:'Ravi Patel',action:'CREATE',target:'CVR-2024-007',note:'Created 2024-2026 Capital Budget Plan'},
-  {ts:'2024-06-30 15:30',user:'System',action:'DISPOSE',target:'CVR-2021-031',note:'Certificate of Destruction issued — Financial record past retention'},
-  {ts:'2024-06-01 08:45',user:'Ravi Patel',action:'CREATE',target:'CVR-2024-006',note:'Created FOIP Request file — marked Highly Confidential'},
-  {ts:'2024-05-20 14:00',user:'Ravi Patel',action:'CLASSIFY',target:'CVR-2024-005',note:'Classified as Legal > Bylaws — Permanent retention applied'},
+  {ts:'2024-07-15 09:00',user:'Ravi Patel',action:'CREATE',target:'MDS-2024-007',note:'Created 2024-2026 Capital Budget Plan'},
+  {ts:'2024-06-30 15:30',user:'System',action:'DISPOSE',target:'MDS-2021-031',note:'Certificate of Destruction issued — Financial record past retention'},
+  {ts:'2024-06-01 08:45',user:'Ravi Patel',action:'CREATE',target:'MDS-2024-006',note:'Created FOIP Request file — marked Highly Confidential'},
+  {ts:'2024-05-20 14:00',user:'Ravi Patel',action:'CLASSIFY',target:'MDS-2024-005',note:'Classified as Legal > Bylaws — Permanent retention applied'},
 ];
 
 let classTree = [
@@ -850,7 +851,7 @@ function addRecord(){
   const title = document.getElementById('nr-title').value.trim();
   if(!title){ notify('Please enter a record title.','err'); return; }
   const yr = parseInt(document.getElementById('nr-ret').value);
-  const id = 'CVR-'+new Date().getFullYear()+'-'+String(records.length+1).padStart(3,'0');
+  const id = 'MDS-'+new Date().getFullYear()+'-'+String(records.length+1).padStart(3,'0');
   const r = {
     id, title,
     class: document.getElementById('nr-class').value,
@@ -933,7 +934,7 @@ function exportRetention(){
   });
   const blob = new Blob([csv],{type:'text/csv'});
   const a = document.createElement('a'); a.href=URL.createObjectURL(blob);
-  a.download='CVR_Retention_Schedule.csv'; a.click();
+  a.download='MDS_Retention_Schedule.csv'; a.click();
   notify('Retention schedule exported as CSV.','ok');
 }
 
@@ -1028,7 +1029,7 @@ function exportAudit(){
   auditLog.forEach(e=>{ csv+=`"${e.ts}","${e.user}","${e.action}","${e.target}","${e.note}"\n`; });
   const blob=new Blob([csv],{type:'text/csv'});
   const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
-  a.download='CVR_Audit_Log.csv'; a.click();
+  a.download='MDS_Audit_Log.csv'; a.click();
   notify('Audit log exported as CSV.','ok');
 }
 
